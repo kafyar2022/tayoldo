@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUIRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUISemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUIBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.page-body {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #334155;
+  line-height: 21px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  background-color: #F1F5F9;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  width: 270px;
+  height: 50px;
+  border: none;
+  background-color: #EB2629;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 16px 0px;
+}
+
+.btn--outlined {
+  background-color: transparent;
+  color: #334155;
+  border: 1px solid #EB2629;
+}
+
+.btn--light {
+  background-color: #fff;
+  color: #334155;
+}
+
+.btn--light::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/more.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 16px;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.logo,
+.logo__img {
+  display: block;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 112px;
+  font-weight: 600;
+}
+
+.site-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.site-navigation__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.site-navigation__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation__link::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/hexagon.svg");
+}
+
+.site-navigation__link--current {
+  color: #EB2629;
+}
+
+.footer {
+  background-color: #fff;
+}
+
+.footer__container {
+  padding: 64px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.footer__logo {
+  margin-right: 32px;
+}
+
+.copyright {
+  margin: 0;
+  margin-right: auto;
+  white-space: pre-wrap;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-link {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  color: transparent;
+  background-color: #EB2629;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__social-list {
+  margin-right: 32px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-link::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contact-link--email::before {
+  background-image: url("../img/email.svg");
+}
+
+.contact-link--phone::before {
+  background-image: url("../img/phone.svg");
+}
+
+.footer__review-links {
+  margin-top: 32px;
+  display: flex;
+}
+
+.review-link {
+  display: flex;
+  color: #475569;
+  margin-right: 32px;
+}
