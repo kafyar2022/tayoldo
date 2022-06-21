@@ -16,12 +16,14 @@ class CreateProductsTable extends Migration
     Schema::create('products', function (Blueprint $table) {
       $table->id();
       $table->string('title');
-      $table->string('slug')->unique();
+      $table->string('slug');
       $table->string('img');
-      $table->string('release_form');
-      $table->string('prescription');
       $table->text('description');
       $table->bigInteger('view_rate')->default(0);
+      $table->integer('prescription_id')->nullable();
+      $table->integer('impact_id')->nullable();
+      $table->integer('active_substance_id')->nullable();
+      $table->string('release_form_id')->nullable();
       $table->timestamps();
     });
   }

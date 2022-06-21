@@ -10,7 +10,7 @@
           <a class="site-navigation__link @if ($route == 'about') site-navigation__link--current @endif" @if ($route != 'about') href="{{ route('about') }}" @endif>О нас</a>
         </li>
         <li class="site-navigation__item">
-          <a class="site-navigation__link @if ($route == 'products' || $route == 'products.show') site-navigation__link--current @endif" @if ($route != 'products' && $route != 'products.show') href="{{ route('products') }}" @endif>Продукты</a>
+          <a class="site-navigation__link @if ($route == 'products' || $route == 'products.show') site-navigation__link--current @endif" @if ($route != 'products') href="{{ route('products') }}" @endif>Продукты</a>
         </li>
       </ul>
 

@@ -162,6 +162,16 @@ class TextSeeder extends Seeder
         'text' => 'Здоровье',
       ],
       [
+        'page' => 'products',
+        'slug' => 'products-title',
+        'text' => 'Наша продукция',
+      ],
+      [
+        'page' => 'products',
+        'slug' => 'products-subtitle',
+        'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec et egestas ultrices placerat id rhoncus. Sapien semper odio rhoncus, aliquam nulla quisque. Pharetra mauris commodo, varius eget sit aliquam amet.',
+      ],
+      [
         'page' => '',
         'slug' => '',
         'text' => '',

@@ -8,13 +8,13 @@
 
     <ul class="social-list footer__social-list">
       <li class="social-list__item">
-        <a class="social-link" style="background-image: url('files/socials/facebook.svg')" href="#">Фейсбук</a>
+        <a class="social-link" style="background-image: url('{{ asset('files/socials/facebook.svg') }}')" href="#">Фейсбук</a>
       </li>
       <li class="social-list__item">
-        <a class="social-link" style="background-image: url('files/socials/instagram.svg')" href="#">Инстаграм</a>
+        <a class="social-link" style="background-image: url('{{ asset('files/socials/instagram.svg') }}')" href="#">Инстаграм</a>
       </li>
       <li class="social-list__item">
-        <a class="social-link" style="background-image: url('files/socials/linkedin.svg')" href="#">Линкед ин</a>
+        <a class="social-link" style="background-image: url('{{ asset('files/socials/linkedin.svg') }}')" href="#">Линкед ин</a>
       </li>
     </ul>
 

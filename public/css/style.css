@@ -55,6 +55,15 @@
   overflow: hidden;
 }
 
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   width: 1140px;
@@ -591,4 +600,118 @@
 
 .value-item:nth-child(even) .value-item__title {
   background-color: #EB2629;
+}
+
+.page-body.products svg,
+.page-body.productsshow svg {
+  top: -1460px;
+  left: calc(50% + 16px);
+}
+
+.products-filter {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.products__subtitle {
+  margin-bottom: 32px;
+}
+
+.products {
+  margin-bottom: 80px;
+}
+
+.filter-form {
+  display: flex;
+  min-height: 48px;
+}
+
+.filter-form__field:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.filter-form__field:first-of-type {
+  flex-grow: 1;
+}
+
+.filter-form__field:not(:first-of-type) {
+  flex-grow: 2;
+}
+
+.filter-form__field {
+  border: 1px solid #EB2629;
+  border-radius: 8px;
+  padding-left: 32px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: transparent;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.pagination li:first-child {
+  order: -2;
+}
+
+.pagination li:last-child {
+  order: -1;
+}
+
+.page-link {
+  user-select: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.page-link.active {
+  background-color: #eb2629;
+  color: #fff;
+}
+
+.page-link.disabled {
+  opacity: 0.5;
+}
+
+.pagination li:first-child .page-link,
+.pagination li:last-child .page-link {
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pagination li:first-child .page-link {
+  background-image: url("../img/more.svg");
+  background-color: transparent;
+  transform: rotate(180deg);
+}
+
+.pagination li:last-child .page-link {
+  background-image: url("../img/more.svg");
+  background-color: transparent;
+}
+
+.pagination-dots {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
 }

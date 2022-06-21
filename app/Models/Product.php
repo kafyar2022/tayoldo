@@ -16,8 +16,28 @@ class Product extends Model
   {
     return [
       'slug' => [
-        'source' => 'title'
-      ]
+        'source' => 'title',
+      ],
     ];
+  }
+
+  public function prescription()
+  {
+    return $this->belongsTo(Prescription::class, 'prescription_id');
+  }
+
+  public function impact()
+  {
+    return $this->belongsTo(Impact::class, 'impact_id');
+  }
+
+  public function activeSubstance()
+  {
+    return $this->belongsTo(ActiveSubstance::class, 'active_substance_id');
+  }
+
+  public function releaseForm()
+  {
+    return $this->belongsTo(ReleaseForm::class);
   }
 }
