@@ -12,9 +12,12 @@
         <li class="site-navigation__item">
           <a class="site-navigation__link @if ($route == 'products' || $route == 'products.show') site-navigation__link--current @endif" @if ($route != 'products') href="{{ route('products') }}" @endif>Продукты</a>
         </li>
+        <li class="site-navigation__item site-navigation__item--mobile">
+          <a class="site-navigation__link @if ($route == 'contacts' ) site-navigation__link--current @endif" @if ($route != 'contacts') href="{{ route('contacts') }}" @endif>Контакты</a>
+        </li>
       </ul>
 
-      <a class="btn @if ($route != 'contacts') btn--outlined @endif" @if ($route != 'contacts') href="{{ route('contacts') }}" @endif>Контакты</a>
+      <a class="btn contacts-link @if ($route != 'contacts') btn--outlined @endif" @if ($route != 'contacts') href="{{ route('contacts') }}" @endif>Контакты</a>
     </nav>
   </div>
 </header>
