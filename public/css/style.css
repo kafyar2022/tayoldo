@@ -789,3 +789,39 @@ select::-ms-expand {
   max-width: 560px;
   margin: 64px auto;
 }
+
+.page-body.contacts svg {
+  top: 0;
+  left: 50%;
+  transform: translate(-6%, -47%);
+}
+
+.map iframe {
+  width: 100%;
+  height: 480px;
+  border-radius: 0 0 8px 8px;
+}
+
+.contacts__title {
+  margin-top: 32px;
+}
+
+.contacts__subtitle {
+  margin: 32px 0;
+}
+
+.contacts__contacts {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.contacts__contacts *:first-of-type {
+  margin-bottom: 0;
+  margin-right: 32px;
+}
+
+.contacts__inner {
+  max-width: 560px;
+}

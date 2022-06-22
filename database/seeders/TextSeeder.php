@@ -182,6 +182,16 @@ class TextSeeder extends Seeder
         'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec et egestas ultrices placerat id rhoncus. Sapien semper odio rhoncus, aliquam nulla quisque. Pharetra mauris commodo, varius eget sit aliquam amet.',
       ],
       [
+        'page' => 'contacts',
+        'slug' => 'contacts-title',
+        'text' => 'Связь с нами',
+      ],
+      [
+        'page' => 'contacts',
+        'slug' => 'contacts-subtitle',
+        'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec et egestas ultrices placerat id rhoncus. Sapien semper odio rhoncus, aliquam nulla quisque. Pharetra mauris commodo, varius eget sit aliquam amet.',
+      ],
+      [
         'page' => '',
         'slug' => '',
         'text' => '',
