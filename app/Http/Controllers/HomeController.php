@@ -16,8 +16,8 @@ class HomeController extends Controller
       'title',
       'slug',
       'img',
-      'release_form',
-      'prescription',
+      'release_form_id',
+      'prescription_id',
       'description',
       'view_rate',
     )

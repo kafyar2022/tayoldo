@@ -172,6 +172,16 @@ class TextSeeder extends Seeder
         'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec et egestas ultrices placerat id rhoncus. Sapien semper odio rhoncus, aliquam nulla quisque. Pharetra mauris commodo, varius eget sit aliquam amet.',
       ],
       [
+        'page' => 'products.show',
+        'slug' => 'similar-products-title',
+        'text' => 'Похожая продукция',
+      ],
+      [
+        'page' => 'products.show',
+        'slug' => 'similar-products-subtitle',
+        'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec et egestas ultrices placerat id rhoncus. Sapien semper odio rhoncus, aliquam nulla quisque. Pharetra mauris commodo, varius eget sit aliquam amet.',
+      ],
+      [
         'page' => '',
         'slug' => '',
         'text' => '',

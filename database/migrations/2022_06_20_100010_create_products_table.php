@@ -24,6 +24,9 @@ class CreateProductsTable extends Migration
       $table->integer('impact_id')->nullable();
       $table->integer('active_substance_id')->nullable();
       $table->string('release_form_id')->nullable();
+      $table->string('gain_url')->nullable();
+      $table->text('content')->nullable();
+      $table->string('instruction')->nullable();
       $table->timestamps();
     });
   }

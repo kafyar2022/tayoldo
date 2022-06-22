@@ -20,4 +20,9 @@ class Prescription extends Model
       ],
     ];
   }
+
+  public function products()
+  {
+    return $this->hasMany(Product::class, 'prescription_id');
+  }
 }

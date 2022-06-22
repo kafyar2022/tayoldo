@@ -31,13 +31,13 @@ class Product extends Model
     return $this->belongsTo(Impact::class, 'impact_id');
   }
 
-  public function activeSubstance()
+  public function active_substance()
   {
     return $this->belongsTo(ActiveSubstance::class, 'active_substance_id');
   }
 
-  public function releaseForm()
+  public function release_form()
   {
-    return $this->belongsTo(ReleaseForm::class);
+    return $this->belongsTo(ReleaseForm::class, 'release_form_id');
   }
 }
