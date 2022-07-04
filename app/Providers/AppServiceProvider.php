@@ -31,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
     view()->composer('*', function ($view) {
       return $view->with([
         'route' => \Route::currentRouteName(),
+        'admin' => session()->get('loggedUser'),
       ]);
     });
   }
