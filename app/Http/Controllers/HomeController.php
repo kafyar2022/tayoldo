@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
   public function index()
   {
-    $data['texts'] = Helper::getTexts('home');
+    $data = Helper::getTexts('home');
     $data['products'] = Product::select(
       'id',
       'title',

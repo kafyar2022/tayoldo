@@ -13,7 +13,7 @@ class ProductController extends Controller
 {
   public function index()
   {
-    $data['texts'] = Helper::getTexts('products');
+    $data = Helper::getTexts('products');
 
     $data['prescriptions'] = Prescription::get();
     $data['impacts'] = Impact::get();
@@ -46,7 +46,7 @@ class ProductController extends Controller
 
   public function show($slug)
   {
-    $data['texts'] = Helper::getTexts('products.show');
+    $data = Helper::getTexts('products.show');
 
     $data['product'] = Product::where('slug', $slug)
       ->first();

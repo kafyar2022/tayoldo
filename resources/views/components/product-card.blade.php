@@ -8,7 +8,7 @@
   <div class="product-card__middle">
     <h3 class="product-card__title">{{ $product->title }}</h3>
 
-    <p class="product-card__release-form">Форма выпуска: <span style="text-transform: lowercase">{{ $product->release_form->title ?? '' }}</span></p>
+    <p class="product-card__release-form">Форма выпуска: <span style="text-transform: lowercase;">{{ $product->release_form->title ?? '' }}</span></p>
     <p class="txt product-card__description">{{ $product->description }}</p>
   </div>
 

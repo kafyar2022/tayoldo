@@ -1,8 +1,9 @@
 import { toggleDashNav } from './api.js';
-import { initTextEdit } from './text.js';
+import TextManager from './text.js';
 
 const dashToggleEl = document.querySelector('.dash__btn');
 const dashEl = document.querySelector('.dashboard');
+const textManager = new TextManager();
 
 dashToggleEl.addEventListener('click', async (evt) => {
   evt.preventDefault();
@@ -10,4 +11,4 @@ dashToggleEl.addEventListener('click', async (evt) => {
   dashEl.classList.toggle('dashboard--closed');
 });
 
-initTextEdit();
+textManager.init();

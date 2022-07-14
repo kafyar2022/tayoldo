@@ -9,7 +9,7 @@ class AboutController extends Controller
 {
   public function index()
   {
-    $data['texts'] = Helper::getTexts('about');
+    $data = Helper::getTexts('about');
 
     return view('pages.about', compact('data'));
   }

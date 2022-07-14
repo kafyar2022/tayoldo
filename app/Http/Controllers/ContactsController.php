@@ -9,7 +9,7 @@ class ContactsController extends Controller
 {
   public function index()
   {
-    $data['texts'] = Helper::getTexts('contacts');
+    $data = Helper::getTexts('contacts');
 
     return view('pages.contacts', compact('data'));
   }

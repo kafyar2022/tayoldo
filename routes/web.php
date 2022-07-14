@@ -36,5 +36,6 @@ Route::group(['middleware' => ['AuthCheck']], function () {
     Route::get('/', [DashController::class, 'index'])->name('dashboard');
     Route::get('/state', [DashController::class, 'state'])->name('dashboard.state');
     Route::get('/products', [DashController::class, 'products'])->name('dashboard.products');
+    Route::post('/update-text', [DashController::class, 'updateText']);
   });
 });
