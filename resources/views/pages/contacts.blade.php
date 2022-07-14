@@ -9,12 +9,12 @@
     </div>
 
     <div class="contacts__inner">
-      <h1 class="title contacts__title">{{ $data['contacts-title'] }}</h1>
-      <p class="txt contacts__subtitle">{{ $data['contacts-subtitle'] }}</p>
+      <h1 class="title contacts__title" data-text="contacts-title">{{ $data['contacts-title'] }}</h1>
+      <p class="txt contacts__subtitle" data-text="contacts-subtitle">{{ $data['contacts-subtitle'] }}</p>
 
       <div class="contacts__contacts">
-        <a class="contact-link contact-link--email" href="mailto:{{ $data['email'] }}">{{ $data['email'] }}</a>
-        <a class="contact-link contact-link--phone" href="tel:{{ str_replace([' ', '(', ')', '-'], '', $data['phone']) }}">{{ $data['phone'] }}</a>
+        <a class="contact-link contact-link--email" data-text="email" href="mailto:{{ $data['email'] }}">{{ $data['email'] }}</a>
+        <a class="contact-link contact-link--phone" data-text="phone" href="tel:{{ str_replace([' ', '(', ')', '-'], '', $data['phone']) }}">{{ $data['phone'] }}</a>
       </div>
     </div>
   </main>

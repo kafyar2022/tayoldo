@@ -4,8 +4,8 @@
 
 @section('content')
   <main class="container content">
-    <h1 class="title" id="products">{{ $data['products-title'] }}</h1>
-    <p class="txt subtitle products__subtitle">{{ $data['products-subtitle'] }}</p>
+    <h1 class="title" id="products" data-text="products-title">{{ $data['products-title'] }}</h1>
+    <p class="txt subtitle products__subtitle" data-text="products-subtitle">{{ $data['products-subtitle'] }}</p>
 
     <section class="products-filter">
       <form class="filter-form" action="{{ route('products') }}#products" method="GET">
