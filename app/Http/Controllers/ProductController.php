@@ -96,4 +96,13 @@ class ProductController extends Controller
 
     return response()->download($file, $product->instruction, $headers);
   }
+
+  public function search(Request $request)
+  {
+    $data['products'] = Product::select('id', 'title')
+      ->where('title', 'like', '%' . $request->keyword . '%')
+      ->get();
+
+    return view('dashboard.pages.products.index', compact('data'));
+  }
 }

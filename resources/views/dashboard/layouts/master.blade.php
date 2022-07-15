@@ -18,10 +18,10 @@
 
 <body class="page-body">
   @include('layouts.dashboard')
-  
+
   @yield('content')
 
-  <script src="{{ asset('js/dashboard.js') }}"></script>
+  <script src="{{ asset('js/dashboard.js') }}" type="module"></script>
   @yield('script')
 </body>
 

@@ -20,8 +20,8 @@
     <div class="product__content">{!! $data['product']->content ?? '' !!}</div>
 
     <section class="similar-products">
-      <h2 class="title">{{ $data['texts']['similar-products-title'] }}</h2>
-      <p class="txt subtitle">{{ $data['texts']['similar-products-subtitle'] }}</p>
+      <h2 class="title">{{ $data['similar-products-title'] }}</h2>
+      <p class="txt subtitle">{{ $data['similar-products-subtitle'] }}</p>
     </section>
 
     <div class="our-products">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Text;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,14 @@ class DashController extends Controller
 
   public function products()
   {
-    return view('dashboard.pages.products.index');
+    $data['products'] = Product::select(
+      'id',
+      'title',
+    )
+      ->orderBy('title')
+      ->get();
+
+    return view('dashboard.pages.products.index', compact('data'));
   }
 
   public function updateText(Request $request)
@@ -37,5 +45,10 @@ class DashController extends Controller
 
     $response = ['text' => $text->text];
     return json_encode($response);
+  }
+
+  public function create()
+  {
+    return view('dashboard.pages.products.create');
   }
 }
