@@ -125,10 +125,12 @@ select::-ms-expand {
   font-size: 400;
   color: #334155;
   white-space: pre-wrap;
+  max-width: 660px;
 }
 
 .subtitle {
   margin-bottom: 64px;
+  max-width: 660px;
 }
 
 .header {
@@ -1364,7 +1366,7 @@ select::-ms-expand {
   z-index: 2;
 }
 
-.action--cancel:hover + * {
+.action--cancel:hover+* {
   outline: 1px solid red !important;
 }
 
